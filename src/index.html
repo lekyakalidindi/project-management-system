@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Project Management System</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Project Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex justify-content-end w-100 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Requirements</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div style="margin:auto;" class="w-75 mt-5">
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Add Project
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+
+        <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Delete Project
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Display Project Details
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    View All Projects
+                </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+
+        <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Add Risk To Project
+                </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- <div id="mainOptions">
+        <button class="mainOptionButton" onclick="hideSubOption(); addProject();">Add Project</button>
+        <button class="mainOptionButton" onclick="hideSubOption(); addRequirement();">Add Requirements to Project</button>
+        <button class="mainOptionButton" onclick="hideSubOption(); displayAllProjects();">View All Projects</button>
+        <button class="mainOptionButton" onclick="hideSubOption(); displayProjectDetails();">Display Project Details</button>
+        <button class="mainOptionButton" onclick="hideSubOption(); deleteProject();">Delete Project</button>
+
+        <button class="mainOptionButton" onclick="hideSubOption(); addRisk();">Add Risk to Project</button>
+        <button class="mainOptionButton" onclick="hideSubOption(); addEffort();">Add Effort to Requirement</button>
+        <button class="mainOptionButton" onclick="hideSubOption(); addTeamMember();">Add Team Member to Project</button>
+    </div> -->
+
+
+    <!-- <div class="subOptions" id="addProject">
+        <input type="text" id="projectID" class="smallInput">
+        <label class="inputText">Add Project ID</label>
+        <br>
+        <input type="text" id="projectName" class="smallInput">
+        <label class="inputText">Add Project Name</label>
+        <br>
+        <input type="text" id="client" class="smallInput">
+        <label class="inputText">Add Client</label>
+        <br>
+        <button class="subOptionButton">create</button>
+    </div>
+    <div class="subOptions" id="addRequirement">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" id="requirementID" class="smallInput">
+        <label class="inputText">Add Requirement ID</label>
+        <br>
+        <textarea id="requirementDesc" class="smallInput" rows="5" cols="20"></textarea>
+        <label class="inputText">Add Requirement Description</label>
+        <br>
+        <input type="checkbox" id="functionality"> <div class="subOptions" id="addProject">
+        <input type="text" id="projectID" class="smallInput">
+        <label class="inputText">Add Project ID</label>
+        <br>
+        <input type="text" id="projectName" class="smallInput">
+        <label class="inputText">Add Project Name</label>
+        <br>
+        <input type="text" id="client" class="smallInput">
+        <label class="inputText">Add Client</label>
+        <br>
+        <button class="subOptionButton">create</button>
+    </div>
+    <div class="subOptions" id="addRequirement">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" id="requirementID" class="smallInput">
+        <label class="inputText">Add Requirement ID</label>
+        <br>
+        <textarea id="requirementDesc" class="smallInput" rows="5" cols="20"></textarea>
+        <label class="inputText">Add Requirement Description</label>
+        <br>
+        <input type="checkbox" id="functionality">
+        <label>functional</label>
+        <br>
+        <button class="subOptionButton">Add</button>
+    </div>
+    <div class="subOptions" id="addEffort">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Requirement ID</label>
+        <br>
+        <input type="text" id="date" class="smallInput">
+        <label class="inputText">Add Date</label>
+        <br>
+        <input type="text" id="Effort" class="smallInput">
+        <label class="inputText">Add Effort</label>
+        <br>
+        <button class="subOptionButton">create</button>
+    </div>
+    <div class="subOptions" id="addTeamMember">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" id="teamMemberName" class="smallInput">
+        <label class="inputText">Add Team Member Name</label>
+        <br>
+        <input type="text" id="teamMemberRole" class="smallInput">
+        <label class="inputText">Add Team Member Role</label>
+        <br>
+        <button class="subOptionButton">create</button>
+    </div>
+    <div class="subOptions" id="addRisk">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" id="riskID" class="smallInput">
+        <label class="inputText">Add Risk ID</label>
+        <br>
+        <textarea id="riskDesc" class="smallInput" rows="5" cols="20"></textarea>
+        <label class="inputText">Add Risk Description</label>
+        <br>
+        <input type="checkbox" id="open">
+        <label>Open</label>
+        <input type="checkbox" id="inProgress">
+        <label>In Progress</label>
+        <input type="checkbox" id="closed">
+        <label>Closed</label>
+        <br>
+        <button class="subOptionButton">Add</button>
+    </div>
+    <div class="subOptions" id="displayProjectDetails">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <div>
+            <p>Project ID: </p>
+            <p>Project Name: </p>
+            <p>Requirements: </p>
+            <p>Efforts: </p>
+            <p>Team Members: </p>
+            <p>Risks: </p>
+        </div>
+    </div>
+    <div class="subOptions" id="displayAllProjects">
+        <p>This will list the projects</p>
+    </div>
+    <div class="subOptions" id="deleteProject">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        
+        <label class="inputText">Enter Administrator Password</label>
+        <br>
+        <input type="text" id="password" class="smallInput">
+        <br>
+        <div id="deleteBox">
+            <label>Are you sure you want to delete this project?</label>
+            <br>
+            <button class="subOptionButton">Delete</button>
+            <button class="subOptionButton">Cancel</button>
+        </div>
+    </div>
+        <label>functional</label>
+        <br>
+        <button class="subOptionButton">Add</button>
+    </div>
+    <div class="subOptions" id="addEffort">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Requirement ID</label>
+        <br>
+        <input type="text" id="date" class="smallInput">
+        <label class="inputText">Add Date</label>
+        <br>
+        <input type="text" id="Effort" class="smallInput">
+        <label class="inputText">Add Effort</label>
+        <br>
+        <button class="subOptionButton">create</button>
+    </div>
+    <div class="subOptions" id="addTeamMember">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" id="teamMemberName" class="smallInput">
+        <label class="inputText">Add Team Member Name</label>
+        <br>
+        <input type="text" id="teamMemberRole" class="smallInput">
+        <label class="inputText">Add Team Member Role</label>
+        <br>
+        <button class="subOptionButton">create</button>
+    </div>
+    <div class="subOptions" id="addRisk">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <input type="text" id="riskID" class="smallInput">
+        <label class="inputText">Add Risk ID</label>
+        <br>
+        <textarea id="riskDesc" class="smallInput" rows="5" cols="20"></textarea>
+        <label class="inputText">Add Risk Description</label>
+        <br>
+        <input type="checkbox" id="open">
+        <label>Open</label>
+        <input type="checkbox" id="inProgress">
+        <label>In Progress</label>
+        <input type="checkbox" id="closed">
+        <label>Closed</label>
+        <br>
+        <button class="subOptionButton">Add</button>
+    </div>
+    <div class="subOptions" id="displayProjectDetails">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        <div>
+            <p>Project ID: </p>
+            <p>Project Name: </p>
+            <p>Requirements: </p>
+            <p>Efforts: </p>
+            <p>Team Members: </p>
+            <p>Risks: </p>
+        </div>
+    </div>
+    <div class="subOptions" id="displayAllProjects">
+        <p>This will list the projects</p>
+    </div>
+    <div class="subOptions" id="deleteProject">
+        <input type="text" class="smallInput">
+        <label class="inputText">Enter Project ID</label>
+        <br>
+        
+        <label class="inputText">Enter Administrator Password</label>
+        <br>
+        <input type="text" id="password" class="smallInput">
+        <br>
+        <div id="deleteBox">
+            <label>Are you sure you want to delete this project?</label>
+            <br>
+            <button class="subOptionButton">Delete</button>
+            <button class="subOptionButton">Cancel</button>
+        </div>
+    </div> -->
+</body>
+</html>
