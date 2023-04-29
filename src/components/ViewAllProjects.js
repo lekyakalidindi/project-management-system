@@ -1,31 +1,53 @@
+import Requirement from "./Requirement";
+import TeamMember from "./TeamMember";
+import Risk from "./Risk";
+import { Fragment } from "react";
+import Card from "./Card";
+const projects = require("./project.json");
+
 function ViewAllProjects() {
   return (
-    <div>
-      <table class="table">
-        <thead class="thead bg-dark text-white">
-          <tr>
-            <th scope="col">Project Id</th>
-            <th scope="col">Project Name</th>
-            <th scope="col">Client</th>
-            <th scope="col">Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>VSON</td>
-            <td>Verizon</td>
-            <td>Verizon Self Switching Oriented Network</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>VMB</td>
-            <td>Verizon</td>
-            <td>Verizon Messaging Bus</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <Fragment>
+      {projects.map((project) => (
+        <Fragment>
+          <div class="row">
+            <Card header={`Project: ${project.projectName}`}>
+              <p>Client: {project.projectClient}</p>
+              <p>Owner: {project.projectOwner}</p>
+              <p>Description: {project.highLevelDescription}</p>
+            </Card>
+            <Card header={`${project.projectName} Requirements:`}>
+              <ul>
+                {project.requirements.map((requirement) => (
+                  <Requirement key={requirement.id} requirement={requirement} />
+                ))}
+              </ul>
+            </Card>
+          </div>
+
+          <div class="row">
+            <Card header={`${project.projectName} Team members:`}>
+              <ul>
+                {project.teamMembers.map((teamMember) => (
+                  <TeamMember key={teamMember.id} teamMember={teamMember} />
+                ))}
+              </ul>
+            </Card>
+            <Card header={`${project.projectName} Risks:`}>
+              <ul>
+                {project.risks.map((risk) => (
+                  <Risk key={risk.id} risk={risk} />
+                ))}
+              </ul>
+            </Card>
+          </div>
+
+          <br />
+          <br />
+          <br />
+        </Fragment>
+      ))}
+    </Fragment>
   );
 }
 
