@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export default function AddProject() {
   const [projectName, setProjectName] = useState("");
@@ -33,6 +34,10 @@ export default function AddProject() {
     axios
       .request(config)
       .then((response) => {
+        toast.success(
+          `Successully added ${response.data.id}. ProjectName ${response.data.projectName}`
+        );
+
         console.log(JSON.stringify(response.data));
       })
       .catch((error) => {

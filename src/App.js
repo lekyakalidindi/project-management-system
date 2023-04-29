@@ -4,11 +4,13 @@ import Navbar from "./components/Navbar";
 import Requirements from "./components/Requirements";
 import Resources from "./components/Resources";
 import history from "./history";
+import Toastify from "./components/Toastify";
 
 function App() {
   return (
     <div>
       <Navbar history={history} />
+      <Toastify />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Project />} />

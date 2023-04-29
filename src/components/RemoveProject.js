@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export default function RemoveProject({ setRemId }) {
   const [projectId, setProject] = useState(null);
@@ -20,6 +21,7 @@ export default function RemoveProject({ setRemId }) {
       .request(config)
       .then((response) => {
         setRemId(projectId);
+        toast.success(`Project ${projectId} successfully removed..`);
       })
       .catch((error) => {
         console.log(error);
