@@ -2,7 +2,7 @@ import { useState, useEffect, Fragment } from "react";
 import RenderProjects from "./RenderProjects";
 import axios from "axios";
 
-function ViewAllProjects() {
+function ViewAllProjects({ remId }) {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function ViewAllProjects() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [remId]);
   return (
     <Fragment>
       {projects.length ? (
