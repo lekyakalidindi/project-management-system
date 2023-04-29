@@ -1,9 +1,12 @@
 function Card({ header, children }) {
   return (
-    <div class="col-sm">
-      <div style={{ height: "300px" }} class="card">
-        <div class="card-header">{header}</div>
-        <div class="card-body" style={{ height: "auto", overflow: "scroll" }}>
+    <div className="col-sm">
+      <div style={{ height: "300px" }} className="card">
+        <div className="card-header">{header}</div>
+        <div
+          className="card-body"
+          style={{ height: "auto", overflow: "scroll" }}
+        >
           {children && children}
         </div>
       </div>

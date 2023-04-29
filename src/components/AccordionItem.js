@@ -1,10 +1,10 @@
 function AccordionItem(props) {
   return (
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
+    <div className="accordion" id="accordionExample">
+      <div className="accordion-item">
+        <h2 className="accordion-header">
           <button
-            class="accordion-button"
+            className="accordion-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={`#${props.accId}`}
@@ -16,7 +16,7 @@ function AccordionItem(props) {
         </h2>
         <div
           id={props.accId}
-          class="accordion-collapse collapse m-4"
+          className="accordion-collapse collapse m-4"
           data-bs-parent="#accordionExample"
         >
           {props.children}

@@ -1,54 +1,32 @@
-import Requirement from "./Requirement";
-import TeamMember from "./TeamMember";
-import Risk from "./Risk";
-import { Fragment } from "react";
-import Card from "./Card";
+import { useState, useEffect } from "react";
+import RenderProjects from "./RenderProjects";
 const projects = require("./project.json");
 
 function ViewAllProjects() {
-  return (
-    <Fragment>
-      {projects.map((project) => (
-        <Fragment>
-          <div class="row">
-            <Card header={`Project: ${project.projectName}`}>
-              <p>Client: {project.projectClient}</p>
-              <p>Owner: {project.projectOwner}</p>
-              <p>Description: {project.highLevelDescription}</p>
-            </Card>
-            <Card header={`${project.projectName} Requirements:`}>
-              <ul>
-                {project.requirements.map((requirement) => (
-                  <Requirement key={requirement.id} requirement={requirement} />
-                ))}
-              </ul>
-            </Card>
-          </div>
+  // const [project, setProjects] = useState([]);
 
-          <div class="row">
-            <Card header={`${project.projectName} Team members:`}>
-              <ul>
-                {project.teamMembers.map((teamMember) => (
-                  <TeamMember key={teamMember.id} teamMember={teamMember} />
-                ))}
-              </ul>
-            </Card>
-            <Card header={`${project.projectName} Risks:`}>
-              <ul>
-                {project.risks.map((risk) => (
-                  <Risk key={risk.id} risk={risk} />
-                ))}
-              </ul>
-            </Card>
-          </div>
-
-          <br />
-          <br />
-          <br />
-        </Fragment>
-      ))}
-    </Fragment>
-  );
+  useEffect(() => {
+    // console.log(axios, "axios");
+    // axios.get();
+    // const axios = require("axios");
+    // let config = {
+    //   maxBodyLength: Infinity,
+    //   headers: {
+    //     accept: "text/plain",
+    //     Cookie:
+    //       "ARRAffinity=92ca53ad8db4fbb93d4d3b7d8ab54dcf8ffecb2d731f25b0e91ad575d7534c3f; ARRAffinitySameSite=92ca53ad8db4fbb93d4d3b7d8ab54dcf8ffecb2d731f25b0e91ad575d7534c3f",
+    //   },
+    // };
+    // axios
+    //   .get("https://system5api.azurewebsites.net/", config)
+    //   .then((response) => {
+    //     console.log(JSON.stringify(response.data), "<----- data");
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+  }, []);
+  return <RenderProjects projects={projects} />;
 }
 
 export default ViewAllProjects;

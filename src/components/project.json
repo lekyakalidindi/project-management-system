@@ -1,164 +1,56 @@
 [
-    {
-      "id": 1,
-      "projectName": "anjeesha",
-      "projectClient": "achala",
-      "projectOwner": "anjeesha",
-      "highLevelDescription": "AI and ML project",
-      "requirements": [
-        {
-          "id": 1,
-          "description": "desc 1",
-          "isFunctional": true,
-          "projectId": 1,
-          "project": "proj 1",
-          "efforts": [
-            {
-              "id": 0,
-              "effortDate": "2023-04-29T05:08:52.211Z",
-              "requirementsAnalysisHours": 0,
-              "designHours": 0,
-              "codingHours": 0,
-              "testingHours": 0,
-              "projectManagementHours": 0,
-              "requirementId": 0,
-              "requirement": "add an ML project"
-            }
-          ]
-        }
-      ],
-      "teamMembers": [
-        {
-          "id": 0,
-          "name": "junnu",
-          "role": "hr",
-          "projectId": 1,
-          "project": "AI project"
-        },
-       {
-          "id": 0,
-          "name": "bunnu",
-          "role": "hr",
-          "projectId": 2,
-          "project": "ML project"
-        }
-      ],
-      "risks": [
-        {
-          "id": 0,
-          "description": "risk factor 10%",
-          "status": 0,
-          "projectId": 0,
-          "project": "AI project"
-        }
-      ]
-    },
+  {
+    "id": 1,
+    "projectName": "anjeesha",
+    "projectClient": "achala",
+    "projectOwner": "anjeesha",
+    "highLevelDescription": "AI and ML project",
+    "requirements": [
       {
-      "id": 1,
-      "projectName": "anjeesha",
-      "projectClient": "achala",
-      "projectOwner": "anjeesha",
-      "highLevelDescription": "AI and ML project",
-      "requirements": [
-        {
-          "id": 1,
-          "description": "desc 1",
-          "isFunctional": true,
-          "projectId": 1,
-          "project": "proj 1",
-          "efforts": [
-            {
-              "id": 0,
-              "effortDate": "2023-04-29T05:08:52.211Z",
-              "requirementsAnalysisHours": 0,
-              "designHours": 0,
-              "codingHours": 0,
-              "testingHours": 0,
-              "projectManagementHours": 0,
-              "requirementId": 0,
-              "requirement": "add an ML project"
-            }
-          ]
-        }
-      ],
-      "teamMembers": [
-        {
-          "id": 0,
-          "name": "junnu",
-          "role": "hr",
-          "projectId": 1,
-          "project": "AI project"
-        },
-       {
-          "id": 0,
-          "name": "bunnu",
-          "role": "hr",
-          "projectId": 2,
-          "project": "ML project"
-        }
-      ],
-      "risks": [
-        {
-          "id": 0,
-          "description": "risk factor 10%",
-          "status": 0,
-          "projectId": 0,
-          "project": "AI project"
-        }
-      ]
-    },
+        "id": 1,
+        "description": "desc 1",
+        "isFunctional": true,
+        "projectId": 1,
+        "project": "proj 1",
+        "efforts": [
+          {
+            "id": 0,
+            "effortDate": "2023-04-29T05:08:52.211Z",
+            "requirementsAnalysisHours": 0,
+            "designHours": 0,
+            "codingHours": 0,
+            "testingHours": 0,
+            "projectManagementHours": 0,
+            "requirementId": 0,
+            "requirement": "add an ML project"
+          }
+        ]
+      }
+    ],
+    "teamMembers": [
       {
-      "id": 1,
-      "projectName": "anjeesha",
-      "projectClient": "achala",
-      "projectOwner": "anjeesha",
-      "highLevelDescription": "AI and ML project",
-      "requirements": [
-        {
-          "id": 1,
-          "description": "desc 1",
-          "isFunctional": true,
-          "projectId": 1,
-          "project": "proj 1",
-          "efforts": [
-            {
-              "id": 0,
-              "effortDate": "2023-04-29T05:08:52.211Z",
-              "requirementsAnalysisHours": 0,
-              "designHours": 0,
-              "codingHours": 0,
-              "testingHours": 0,
-              "projectManagementHours": 0,
-              "requirementId": 0,
-              "requirement": "add an ML project"
-            }
-          ]
-        }
-      ],
-      "teamMembers": [
-        {
-          "id": 0,
-          "name": "junnu",
-          "role": "hr",
-          "projectId": 1,
-          "project": "AI project"
-        },
-       {
-          "id": 0,
-          "name": "bunnu",
-          "role": "hr",
-          "projectId": 2,
-          "project": "ML project"
-        }
-      ],
-      "risks": [
-        {
-          "id": 0,
-          "description": "risk factor 10%",
-          "status": 0,
-          "projectId": 0,
-          "project": "AI project"
-        }
-      ]
-    }
-  ]
+        "id": 0,
+        "name": "junnu",
+        "role": "hr",
+        "projectId": 1,
+        "project": "AI project"
+      },
+      {
+        "id": 0,
+        "name": "bunnu",
+        "role": "hr",
+        "projectId": 2,
+        "project": "ML project"
+      }
+    ],
+    "risks": [
+      {
+        "id": 0,
+        "description": "risk factor 10%",
+        "status": 0,
+        "projectId": 0,
+        "project": "AI project"
+      }
+    ]
+  }
+]

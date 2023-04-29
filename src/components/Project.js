@@ -5,7 +5,7 @@ import AddProject from "./AddProject";
 import RemoveProject from "./RemoveProject";
 function Project() {
   return (
-    <div style={{ margin: "auto" }} class="project w-75 mt-5">
+    <div style={{ margin: "auto" }} className="project w-75 mt-5">
       <AccordionItem accId="acc1" accHeader="Add Project">
         <AddProject />
       </AccordionItem>

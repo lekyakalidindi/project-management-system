@@ -1,17 +1,17 @@
 export default function RemoveProject() {
   return (
     <form>
-      <div class="form-group mt-2">
+      <div className="form-group mt-2">
         <label for="deleteProjectId">Project Id:</label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="delete-project-id"
           aria-describedby="projectId"
           placeholder="Enter Project Id To Remove"
         />
       </div>
-      <button type="submit" class="btn btn-secondary mt-2">
+      <button type="submit" className="btn btn-secondary mt-2">
         Delete Project
       </button>
     </form>
