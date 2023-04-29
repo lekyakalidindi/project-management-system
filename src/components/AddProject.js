@@ -2,7 +2,7 @@ export default function AddProject() {
   return (
     <form>
       <div className="form-group mt-2">
-        <label for="addProjectId">Project Id:</label>
+        <label htmlFor="addProjectId">Project Id:</label>
         <input
           type="text"
           className="form-control"
@@ -15,7 +15,7 @@ export default function AddProject() {
         </small>
       </div>
       <div className="form-group mt-2">
-        <label for="addProjectId">Project Name:</label>
+        <label htmlFor="addProjectId">Project Name:</label>
         <input
           type="text"
           className="form-control"
@@ -25,7 +25,7 @@ export default function AddProject() {
         />
       </div>
       <div className="form-group mt-2">
-        <label for="addClient">Client:</label>
+        <label htmlFor="addClient">Client:</label>
         <input
           type="text"
           className="form-control"

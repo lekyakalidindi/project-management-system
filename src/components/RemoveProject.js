@@ -2,7 +2,7 @@ export default function RemoveProject() {
   return (
     <form>
       <div className="form-group mt-2">
-        <label for="deleteProjectId">Project Id:</label>
+        <label htmlFor="deleteProjectId">Project Id:</label>
         <input
           type="text"
           className="form-control"

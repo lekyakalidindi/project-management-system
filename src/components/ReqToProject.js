@@ -2,7 +2,7 @@ export default function ReqToProject() {
   return (
     <form>
       <div className="form-group mt-2">
-        <label for="addProjectId">Project Id:</label>
+        <label htmlFor="addProjectId">Project Id:</label>
         <input
           type="text"
           className="form-control"
@@ -15,7 +15,7 @@ export default function ReqToProject() {
         </small>
       </div>
       <div className="form-group mt-2">
-        <label for="addProjectId">Requirement Id:</label>
+        <label htmlFor="addProjectId">Requirement Id:</label>
         <input
           type="text"
           className="form-control"
@@ -26,7 +26,7 @@ export default function ReqToProject() {
       </div>
 
       <div className="form-group mt-2">
-        <label for="exampleFormControlTextarea1">
+        <label htmlFor="exampleFormControlTextarea1">
           Add Requirement Description
         </label>
         <textarea

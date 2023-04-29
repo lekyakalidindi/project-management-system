@@ -8,7 +8,7 @@ export default function RenderProjects({ projects }) {
   return (
     <Fragment>
       {projects.map((project) => (
-        <Fragment>
+        <Fragment key={project.id}>
           <div className="row">
             <Card header={`Project: ${project.projectName}`}>
               <p>Client: {project.projectClient}</p>
