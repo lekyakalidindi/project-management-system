@@ -16,6 +16,7 @@ function AccordionItem(props) {
         </h2>
         <div
           id={props.accId}
+          style={{ height: 750, maxHeight: "750px", overflow: "scroll" }}
           className="accordion-collapse collapse m-4"
           data-bs-parent="#accordionExample"
         >

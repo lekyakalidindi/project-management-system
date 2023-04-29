@@ -11,6 +11,8 @@ export default function RenderProjects({ projects }) {
         <Fragment key={project.id}>
           <div className="row">
             <Card header={`Project: ${project.projectName}`}>
+              <p>ProjectId: {project.id}</p>
+              <p>ProjectName: {project.projectName}</p>
               <p>Client: {project.projectClient}</p>
               <p>Owner: {project.projectOwner}</p>
               <p>Description: {project.highLevelDescription}</p>
@@ -42,7 +44,7 @@ export default function RenderProjects({ projects }) {
           </div>
 
           <br />
-          <br />
+          <hr style={{ borderTop: "3px dotted #000000" }} />
           <br />
         </Fragment>
       ))}

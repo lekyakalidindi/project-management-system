@@ -6,7 +6,9 @@ function Requirement({ requirement }) {
       <p>{requirement.description}</p>
       <p>Functional: {requirement.isFunctional.toString()}</p>
 
-      <h5>Efforts</h5>
+      <p>
+        <b>Efforts</b>
+      </p>
       <ul>
         {requirement.efforts.map((effort) => (
           <Effort key={effort.id} effort={effort} />
