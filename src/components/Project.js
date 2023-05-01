@@ -4,6 +4,8 @@ import ViewProject from "./ViewProject";
 import AccordionItem from "./AccordionItem";
 import AddProject from "./AddProject";
 import RemoveProject from "./RemoveProject";
+import AddRisk from "./AddRisk";
+
 function Project() {
   const [remId, setRemId] = useState(0);
   return (
@@ -25,7 +27,8 @@ function Project() {
       </AccordionItem>
 
       <AccordionItem accId="acc5" accHeader="Add Risk To Project">
-        Has to be implemented
+        {/* Has to be implemented */}
+        <AddRisk />
       </AccordionItem>
     </div>
   );
